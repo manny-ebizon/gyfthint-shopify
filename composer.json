@@ -1,0 +1,14 @@
+{
+    "require": {
+        "firebase/php-jwt": "^6.2",
+        "php-http/guzzle6-adapter": "^1.1",
+        "guzzlehttp/guzzle": "^6.0",
+        "sparkpost/sparkpost": "^2.3",
+        "shuchkin/simplexlsx": "^1.0",
+        "shuchkin/simplexlsxgen": "^1.2",
+        "chillerlan/php-qrcode": "^4.3",
+        "stripe/stripe-php": "^13.6",
+        "paypal/rest-api-sdk-php": "*",
+        "razorpay/razorpay": "^2.9"
+    }
+}

@@ -1,0 +1,728 @@
+/******************************************************************************/
+
+.menu .app-brand.demo {
+  height: 94px;
+  margin-top: 12px;
+}
+
+.app-brand-logo.demo svg {
+  width: 22px;
+  height: 38px;
+}
+
+.app-brand-text.demo {
+  font-size: 1.75rem;
+  letter-spacing: -0.5px;
+  text-transform: lowercase;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+/* Detached navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+  padding-top: 76px !important;
+}
+/* Default navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+  display: block !important;
+}
+
+.demo-inline-spacing > * {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+  display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+  width: 900px;
+}
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+.text-right {
+  text-align: right;
+}
+.mg0 {
+  margin: 0 !important;
+}
+.name-holder, .role-holder {
+  text-transform: capitalize;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.pointer {
+  cursor: pointer !important;
+}
+.clear {
+  clear: both;
+}
+.clear10 {
+  clear: both;
+  height: 10px;
+}
+.clear20 {
+  clear: both;
+  height: 20px;
+}
+.clear30 {
+  clear: both;
+  height: 30px;
+}
+.clear40 {
+  clear: both;
+  height: 40px;
+}
+.clear50 {
+  clear: both;
+  height: 50px;
+}
+.bg-label-success {
+  background-color: #8BC34A !important;
+  color: #222 !important;
+}
+/* /LOADER */
+.loading-content h5.loading-short,.loading-content h5.loading-long {
+    font-weight: bold;
+    min-height: 16px;
+}
+.loading-content p.loading-short,.loading-content p.loading-long {
+    height: 14px;
+}
+.loading-short {
+  background-color: #e0e0e0;  
+  width: 70%;
+  margin-bottom: 10px;
+  animation: loadingAnimation 1.5s infinite;
+}
+
+.loading-long {
+  background-color: #e0e0e0;  
+  width: 90%;
+  animation: loadingAnimation 1.5s infinite;
+}
+
+@keyframes loadingAnimation {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+.bg-menu-theme .menu-inner > .menu-item.active > .menu-link { 
+  color: #172c5c;
+ }
+ .bg-menu-theme .menu-inner > .menu-item.active:before {
+  background: #172c5c;
+ }
+ a,.text-primary,.bg-label-primary {
+      color: #172c5c !important;
+  }
+  .btn-outline-primary {
+    border-color: #172c5c;
+  }
+  .dataTables_filter {
+    float: left !important;
+  }
+  .dataTables_length {
+    float: right !important;
+  }
+  .dataTables_filter,.dataTables_info {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .dataTables_length,.dataTables_paginate {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  .table.dataTable.no-footer {
+    margin-bottom: 15px;
+  }
+  .btn-toastr {
+    width: 100px;
+    margin-right: 15px;
+  }
+  .btn-toastr:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+  .btn-toastr-no {
+    border-color: #fff;
+    color: #fff !important;    
+  }
+  .btn-toastr-yes {
+    background-color: #fff;
+    color: #222;
+  }
+  .dataTables_wrapper .dataTables_filter select {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: transparent;
+    margin-left: 3px;
+    height: 34.95px;
+    min-width: 100px;
+}
+.wi-100 {
+  width: 100px;
+}
+.user-initials {
+  text-align: center;
+  background-color: #f6f6f6;
+  border-radius: 100%;
+  font-weight: bold;
+  font-size: 24px;
+}
+.authentication-wrapper.authentication-basic .registration-inner {
+  max-width: 600px;
+  position: relative;
+  width: 100%;
+}
+.pd0 {
+  padding: 0 !important;
+}
+.pointer {
+  cursor: pointer !important;
+}
+.form-check.custom-option.custom-option-basic.form-control {
+  padding-left: 36px !important;
+}
+.btn-success,.bg-success {
+  background-color: #4CAF50 !important;
+  border: #4CAF50 !important;
+}
+.custom-option,.custom-option label {
+  cursor: pointer !important; 
+}
+
+.temporary-hidden {
+  display: none;
+}
+
+.table-access-config {
+  font-size: 15px !important;
+}
+
+.verification-status{
+  font-size: 30px;
+  color:green;
+}
+
+.for-verification{
+  font-size: 30px;
+}
+
+/* service list */
+  /*panel-prod*/
+  .panel-prod {
+      border: none;
+      box-shadow: none;
+  }
+  
+  .panel-prod-heading {
+      border-color:#eff2f7 ;
+      font-size: 16px;
+      font-weight: 300;
+  }
+  
+  .panel-prod-title {
+      color: #2A3542;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 0;
+      margin-top: 0;
+      font-family: 'Open Sans', sans-serif;
+  }
+  
+  
+  /*product list*/
+  
+  .prod-cat li a{
+      border-bottom: 1px dashed #d9d9d9;
+  }
+  
+  .prod-cat li a {
+      color: #3b3b3b;
+  }
+  
+  .prod-cat li ul {
+      margin-left: 30px;
+  }
+  
+  .prod-cat li ul li a{
+      border-bottom:none;
+  }
+  .prod-cat li ul li a:hover,.prod-cat li ul li a:focus, .prod-cat li ul li.active a , .prod-cat li a:hover,.prod-cat li a:focus, .prod-cat li a.active{
+      background: none;
+      color: #ff7261;
+  }
+  
+  .pro-lab{
+      margin-right: 20px;
+      font-weight: normal;
+  }
+  
+  .pro-sort {
+      padding-right: 20px;
+      float: left;
+  }
+  
+  .pro-page-list {
+      margin: 5px 0 0 0;
+  }
+  
+  .product-list{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .product-list img{
+      width: 100%;
+      border-radius: 4px 4px 0 0;
+      -webkit-border-radius: 4px 4px 0 0;
+  }
+  
+  .product-list .pro-img-box {
+      position: relative;
+  }
+  .adtocart {
+      background: #fc5959;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      border: 3px solid #fff;
+      left: 45%;
+      bottom: -25px;
+      position: absolute;
+  }
+  
+  .adtocart i{
+      color: #fff;
+      font-size: 25px;
+      line-height: 42px;
+  }
+  
+  .pro-title {
+      color: #5A5A5A;
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 16px;
+  }
+  
+  .product-list .price {
+      color:#fc5959 ;
+      font-size: 15px;
+  }
+  
+  .pro-img-details {
+      margin-left: -15px;
+  }
+  
+  .pro-img-details img {
+      width: 100%;
+  }
+  
+  .pro-d-title {
+      font-size: 16px;
+      margin-top: 0;
+  }
+  
+  .product_meta {
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+      margin: 15px 0;
+  }
+  
+  .product_meta span {
+      display: block;
+      margin-bottom: 10px;
+  }
+  .product_meta a, .pro-price{
+      color:#fc5959 ;
+  }
+  
+  .pro-price, .amount-old {
+      font-size: 18px;
+      padding: 0 10px;
+  }
+  
+  .amount-old {
+      text-decoration: line-through;
+  }
+  
+  .quantity {
+      width: 120px;
+  }
+  
+  .pro-img-list {
+      margin: 10px 0 0 -15px;
+      width: 100%;
+      display: inline-block;
+  }
+  
+  .pro-img-list a {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+  }
+  
+  .pro-d-head {
+      font-size: 18px;
+      font-weight: 300;
+  }
+
+  .panel-prod-body{
+    padding:10px;
+    padding-bottom: 20px;
+  }
+
+  .me-2{
+    color:#eff2f7 !important;
+    font-weight: bold;
+  }
+
+  .ticket-id{
+    font-size:small;
+  }
+
+  .card {
+    background: #fff;
+    transition: .5s;
+    border: 0;
+    margin-bottom: 30px;
+    border-radius: .55rem;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+.ticket-thread-app .people-list {
+    width: 280px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 7
+}
+
+.ticket-thread-app .ticket-thread {
+    margin-left: 280px;
+    border-left: 1px solid #eaeaea
+}
+
+.people-list {
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+.people-list .ticket-thread-list li {
+    padding: 10px 15px;
+    list-style: none;
+    border-radius: 3px
+}
+
+.people-list .ticket-thread-list li:hover {
+    background: #efefef;
+    cursor: pointer
+}
+
+.people-list .ticket-thread-list li.active {
+    background: #efefef
+}
+
+.people-list .ticket-thread-list li .name {
+    font-size: 15px
+}
+
+.people-list .ticket-thread-list img {
+    width: 45px;
+    border-radius: 50%
+}
+
+.people-list img {
+    float: left;
+    border-radius: 50%
+}
+
+.people-list .about {
+    float: left;
+    padding-left: 8px
+}
+
+.people-list .status {
+    color: #999;
+    font-size: 13px
+}
+
+.ticket-thread .ticket-thread-header {
+    padding: 15px 20px;
+    border-bottom: 2px solid #f4f7f6
+}
+
+.ticket-thread .ticket-thread-header img {
+    float: left;
+    border-radius: 40px;
+    width: 40px
+}
+
+.ticket-thread .ticket-thread-header .ticket-thread-about {
+    float: left;
+    padding-left: 10px
+}
+
+.ticket-thread .ticket-thread-history {
+    padding: 20px;
+    border-bottom: 2px solid #fff
+}
+
+.ticket-thread .ticket-thread-history ul {
+    padding: 0
+}
+
+.ticket-thread .ticket-thread-history ul li {
+    list-style: none;
+    margin-bottom: 30px
+}
+
+.ticket-thread .ticket-thread-history ul li:last-child {
+    margin-bottom: 0px
+}
+
+.ticket-thread .ticket-thread-history .message-data {
+    margin-bottom: 15px;
+}
+
+.ticket-thread .ticket-thread-history .message-data img {
+    border-radius: 40px;
+    width: 40px
+}
+
+.ticket-thread .ticket-thread-history .message-data-time {
+    color: #434651;
+    padding-left: 6px;
+    font-size: 10px;
+}
+
+.ticket-thread .ticket-thread-history .message-data-user {
+  color: #434651;
+  padding-left: 6px;
+  font-size: 14px;
+}
+
+.ticket-thread .ticket-thread-history .message {
+    color: #444;
+    padding: 18px 20px;
+    line-height: 12px;
+    font-size: 14px;
+    border-radius: 7px;
+    display: inline-block;
+    position: relative
+}
+
+.ticket-thread .ticket-thread-history .message:after {
+    bottom: 100%;
+    left: 7%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px
+}
+
+.ticket-thread .ticket-thread-history .my-message {
+    background: #efefef
+}
+
+.ticket-thread .ticket-thread-history .my-message:after {
+    bottom: 100%;
+    left: 30px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #efefef;
+    border-width: 10px;
+    margin-left: -10px
+}
+
+.ticket-thread .ticket-thread-history .other-message {
+    background: #e8f1f3;
+    text-align: right
+}
+
+.ticket-thread .ticket-thread-history .other-message:after {
+    border-bottom-color: #e8f1f3;
+    left: 93%
+}
+
+.ticket-thread .ticket-thread-message {
+    padding: 20px
+}
+
+.online,
+.offline,
+.me {
+    margin-right: 2px;
+    font-size: 8px;
+    vertical-align: middle
+}
+
+.online {
+    color: #86c541
+}
+
+.offline {
+    color: #e47297
+}
+
+.me {
+    color: #1d8ecd
+}
+
+.float-right {
+    float: right
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+.ticket-date-created{
+  font-size: 10px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 767px) {
+    .ticket-thread-app .people-list {
+        height: 465px;
+        width: 100%;
+        overflow-x: auto;
+        background: #fff;
+        left: -400px;
+        display: none
+    }
+    .ticket-thread-app .people-list.open {
+        left: 0
+    }
+    .ticket-thread-app .ticket-thread {
+        margin: 0
+    }
+    .ticket-thread-app .ticket-thread .ticket-thread-header {
+        border-radius: 0.55rem 0.55rem 0 0
+    }
+    .ticket-thread-app .ticket-thread-history {
+        height: 300px;
+        overflow-x: auto
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .ticket-thread-app .ticket-thread-list {
+        height: 650px;
+        overflow-x: auto
+    }
+    .ticket-thread-app .ticket-thread-history {
+        height: 600px;
+        overflow-x: auto
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .ticket-thread-app .ticket-thread-list {
+        height: 480px;
+        overflow-x: auto
+    }
+    .ticket-thread-app .ticket-thread-history {
+        height: calc(100vh - 350px);
+        overflow-x: auto
+    }
+}
+.dropdown-menu .dropdown-item > i {
+  color: #172c5c !important;
+}
